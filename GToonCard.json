@@ -1,0 +1,248 @@
+{
+    "CardList": [
+        {
+            "number": "0",
+            "name": "Absolution",
+            "character_name": "absolution",
+            "points": "2",
+            "color": "S",
+            "isVehicle": "true",
+            "ability_string": "+5 if any TOM is in Play.",
+            "show_source": "Toonami Base",
+            "ability": {
+                "modifier": "add",
+                "checkforcharacter": "tom",
+                "who": "self",
+                "value": "5"
+            }
+        },
+        {
+            "number": "1",
+            "name": "Action Hank",
+            "character_name": "action hank",
+            "points": "8",
+            "color": "B",
+            "isMale ": "true",
+            "isHero ": "true",
+            "isProp ": "true",
+            "ability_string": "",
+            "show_source": "Dexter's Laboratory",
+            "ability": {
+                "modifier:": "",
+                "": "",
+                "who": "",
+                "value": ""
+            }
+        },
+        {
+            "number": "2",
+            "name": "Agent Honeydew",
+            "character_name": "agent honeydew",
+            "points": "8",
+            "color": "B",
+            "isFemale": "true",
+            "isHero": "true",
+            "affiliation": "global",
+            "ability_string": "",
+            "show_source": "Dexter's Laboratory",
+            "ability": {
+                "modifier:": "",
+                "": "",
+                "who": "",
+                "value": ""
+            }
+        },
+        {
+            "number": "3",
+            "name": "Aku",
+            "character_name": "aku",
+            "points": "10",
+            "color": "G",
+            "isMale": "true",
+            "isVillain": "true",
+            "ability_string": "",
+            "show_source": "Samurai Jack",
+            "ability": {
+                "modifier:": "",
+                "": "",
+                "who": "",
+                "value": ""
+            }
+        },
+        {
+            "number": "4",
+            "name": "Aku Bat",
+            "character_name": "aku",
+            "points": "5",
+            "color": "P",
+            "isMale": "true",
+            "isVillain": "true",
+            "ability_string": "x2 if next to any Samurai Jack",
+            "show_source": "Samurai Jack",
+            "ability": {
+                "modifier:": "multiply",
+                "checkforadjecentcharacter": "samurai jack",
+                "who": "self",
+                "value": "2"
+            }
+        },
+        {
+            "number": "5",
+            "name": "Aku Beast",
+            "character_name": "aku",
+            "points": "6",
+            "color": "G",
+            "isMale": "true",
+            "isVillain": "true",
+            "ability_string": "",
+            "show_source": "Samurai Jack",
+            "ability": {
+                "modifier:": "",
+                "": "",
+                "who": "",
+                "value": ""
+            }
+        },
+        {
+            "number": "6",
+            "name": "Alfred Pennyworth",
+            "character_name": "alfred pennyworth",
+            "points": "4",
+            "color": "O",
+            "isMale": "true",
+            "ability_string": "+4 if next to any Hero, +3 to any Batman.",
+            "show_source": "Batman",
+            "ability": [
+                {
+                    "modifier:": "add",
+                    "checkforsingleadjecenttype": "isHero",
+                    "who": "self",
+                    "value": "4"
+                },
+                {
+                    "modifier:": "add",
+                    "checkforcharacter": "batman",
+                    "who": "batman",
+                    "value": "3"
+                }
+            ]
+        },
+		{
+            "number": "7",
+            "name": "Amoeba Boys",
+            "character_name": "amoeba boys",
+            "points": "7",
+            "color": "U",
+            "isMale": "true",
+			"isVillain": "true",
+            "ability_string": "-5 to neighboring and opposite Villains.",
+            "show_source": "Powerpuff Girls",
+            "ability": {
+                "modifier:": "minus",
+                "checkforadjecentandopposite": "isVillain",
+                "who": "them",
+                "value": "5"
+            }
+        },
+		        {
+            "number": "8",
+            "name": "Aquaman",
+            "character_name": "aquaman",
+            "points": "2",
+            "color": "P",
+            "isMale": "true",
+			"isHero": "true",
+            "ability_string": "+3 to all Green cards.",
+            "show_source": "Justice League",
+            "ability": {
+                "modifier:": "add",
+                "checkforallcolor": "G",
+                "who": "them",
+                "value": "3"
+            }
+        },
+		{
+            "number": "9",
+            "name": "Bamm-Bamm Baby",
+            "character_name": "bamm-bamm",
+            "points": "6",
+            "color": "O",
+            "isMale": "true",
+            "ability_string": "",
+            "show_source": "The Flintstones",
+            "ability": {
+                "modifier:": "",
+                "": "",
+                "who": "",
+                "value": ""
+            }
+        },
+		{
+            "number": "10",
+            "name": "Bamm-Bamm Teen",
+            "character_name": "bamm-bamm",
+            "points": "8",
+            "color": "U",
+            "isMale": "true",
+            "ability_string": "",
+            "show_source": "The Flintstones",
+            "ability": {
+                "modifier:": "",
+                "": "",
+                "who": "",
+                "value": ""
+            }
+        },
+		{
+            "number": "11",
+            "name": "Barney Rubble",
+            "character_name": "barney rubble",
+            "points": "3",
+            "color": "P",
+            "isMale": "true",
+            "ability_string": "+10 if next to any Fred Flintstone",
+            "show_source": "The Flintstones",
+            "ability": {
+                "modifier:": "add",
+                "checkforcharacter": "fred flintstone",
+                "who": "self",
+                "value": "10"
+            }
+        },
+		{
+            "number": "12",
+            "name": "Batgirl",
+            "character_name": "batgirl",
+            "points": "10",
+            "color": "B",
+            "isFemale": "true",
+			"isHero": "true",
+            "ability_string": "",
+            "show_source": "Batman",
+            "ability": {
+                "modifier:": "",
+                "": "",
+                "who": "",
+                "value": ""
+            }
+        },
+		{
+            "number": "13",
+            "name": "Batman",
+            "character_name": "batman",
+            "points": "7",
+            "color": "G",
+            "isMale": "true",
+			"isHero": "true",
+			"affiliation": "Justice League",
+            "ability_string": "-5 to opposite card if not a Hero.",
+            "show_source": "Justice League",
+            "ability": {
+                "modifier:": "minus",
+                "checkforopposite": "notHero",
+                "who": "them",
+                "value": "5"
+            }
+        }
+    ]
+}
